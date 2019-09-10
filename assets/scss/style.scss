@@ -377,7 +377,7 @@ border:2px solid #fff;
 
 
 .section{
-padding:56px 0px;	
+padding:56px 0px 104px 0px;	
 }
 
 .features_container{
@@ -478,7 +478,7 @@ vertical-align: middle;
 
 
 .feature_container{
-	margin-top:32px;
+	margin-top:80px;
 }
 .feature_container:nth-child(1){
 	margin-top:64px;
@@ -1210,5 +1210,18 @@ position:relative;
 
 .privacy_policy_container .top_text_container{
 margin-top:6.5%;	
+}
+
+
+
+
+
+
+
+
+
+.feature_container:nth-child(2) .feature_graphic{
+	
+margin-left:-4%;
 }
 
