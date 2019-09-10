@@ -33,17 +33,27 @@ $text_white_disabled: rgba(255,255,255,.32);
 $litewallet_color: #000B99;
 
 
-
+$title_large: 43.25px;
 $title: 34px;
 $subtitle: 24px;
 $caption: 18.96px;
 $smaller_caption: 16.86px;
 
 
+$margin_left:6%;
+
+
 *{
 	margin:0px;
 	padding:0px;
 }
+
+html{
+	overflow-x:hidden;
+}
+
+
+
 
 html,body{
 	height:100%;
@@ -79,9 +89,9 @@ a{
 
 
 .title{
-	font-family:'InterSemiBold';
+	font-family:'InterMedium';
 	font-size:34px;
-	line-height:52px;
+	line-height:56px;
 }
 .subtitle{
 	font-family:'InterRegular';
@@ -105,11 +115,19 @@ a{
 
 }
 
+.input_field{
+	
+}
 
+.input_field:focus, button:focus{
+	border:none;
+	outline:none;
+}
 
 
 
 .container{
+position:relative;
 	height:100%;
 	width:100%;
 	overflow-x:hidden;
@@ -117,11 +135,18 @@ a{
 
 .top_container{
 position:relative;
-	height:540px;
+	min-height:540px;
+	height:100%;
 	width:100%;
-	background-image:url('../images/Litewallet Background.jpg');
-	background-size:cover;
 }
+
+.top_inner_container{
+min-height:240px;
+height:100%;
+	width:94%;
+	padding-left:$margin_left;
+}
+
 
 .top_nav_container{
 	position:relative;
@@ -141,8 +166,9 @@ position:relative;
 }
 
 .logo_container{
-	float:left;
-	padding-top:.5%;
+width:100%;
+min-height:64px;
+	padding-top:4%;
 }
 
 img.logo{
@@ -150,16 +176,20 @@ img.logo{
 	width:165px;
 }
 
+
+.text_slider{
+	display:inline-block;
+}
+
+
 .top_nav_container .logo_container a img{
 
 }
 
 
 .nav_container{
-	float:right;
-	width:40%;
-	padding-top:1.4%;
-
+float:right;
+	width:70%;
 }
 
 .nav_container ul li{
@@ -180,16 +210,43 @@ img.logo{
 .nav_container ul li a:hover{
 	text-decoration:underline;
 }
+
+
+.top_left_container{
+float:left;
+width:50%;	
+
+box-shadow:12px 12px 16px 12px #ffffff;
+-webkit-box-shadow:12px 12px 16px 12px #ffffff;
+-moz-box-shadow:0px 12px 16px 12px #ffffff;
+-ms-box-shadow:0px 12px 16px 12px #ffffff;
+-o-box-shadow:0px 12px 16px 12px #ffffff;
+
+}
+
+
+.top_right_container{
+	
+float:right;
+width:50%;
+height:100%;
+background-image:url('../images/Home Background.jpg');
+background-size:cover;
+}
+
+
+
 .top_text_container{
-margin-top:5%;
-width:88%;
-padding:0% 6%;
+margin-top:21%;
+width:96%;
+padding-right:4%;
+padding-top:8%;
 }
 .text_title_container{
-	width:80%;
-	padding:0% 10%;
-	text-align:center;
-	font-family:'InterSemiBold';
+	width:100%;
+	padding:0%;
+	text-align:left;
+	font-family:'InterMedium';
 	font-size:34.17px;
 	line-height:56px;
 
@@ -199,28 +256,36 @@ padding:0% 6%;
 	
 	margin-top:1.5%;
 	font-family:'InterRegular';
-	font-size:24px;
+	font-size:20px;
 	line-height:40px;
-		width:72%;
-	padding:0% 14%;
-	text-align:center;
+		width:92%;
+		padding-top:2%;
+	padding-right:4%;
+	text-align:left;
 }
 .signup_container{
-	margin-top:4%;
-	width:72%;
-	padding:0% 14%;
+	margin-top:2%;
+	width:96%;
+	padding-right:4%;
 }
 .signup_label{
 font-family:'InterMedium';
 font-size:18.96px;
 text-align:center;
 width:100%;
+padding-top:4%;
 }
 
 .signup_input_container{
 	width:100%;
 	text-align:center;
 }
+
+.signup_inner_container{
+	width:100%;
+	text-align:center;
+}
+
 input[type="text"]{
 	border:none;
 	border-radius:4px;
@@ -231,7 +296,7 @@ input[type="text"]{
 .signup_input{
 	background:#ddd;
 	margin-top:16px;
-	width:280px;
+	width:240px;
 }
 .signup_button{
 	
@@ -257,6 +322,59 @@ button.raised_button{
 }
 
 
+.signup_avatars_container{
+	padding-top:24px;
+	text-align:left;
+	display:none;
+}
+
+.avatar_single{
+	display:inline-block;
+	margin-left:-16px;
+}
+
+.avatar_single img{
+height:32px;
+width:32px;
+border-radius:50%;
+border:2px solid #fff;
+}
+
+.signup_avatars_text{
+	padding-top:24px;
+	font-family:'InterRegular';
+	font-size:$smaller_caption;
+	text-align:center;
+	width:100%;
+	color:$text_black;
+}
+
+.top_signup_container .signup_label, .top_signup_container .signup_input_container, .top_signup_container .signup_inner_container, .top_signup_container .signup_avatars_text{
+	text-align:left;
+}
+.top_signup_container{
+	padding-top:8px;
+}
+
+
+.bottom_container{
+	min-height:240px;
+	width:100%;
+}
+
+.logo_left{
+	float:left;
+	width:34%;
+}
+
+.currently_serving{
+	float:right;
+	padding-right:3%;
+	width:50%;
+	padding-top:16px;
+	color:$text_black_light;
+}
+
 
 .section{
 padding:56px 0px;	
@@ -272,20 +390,20 @@ padding:56px 0px;
 	
 }
 .home_heading{
-	font-family:'InterSemiBold';
+	font-family:'InterMedium';
 	font-size:34px;
-	line-height:52px;
-	width:72%;
-	padding:0% 14%;
-	color:$litewallet_color;
+	line-height:56px;
+	width:88%;
+	padding:0% 6%;
+	color:$text_black;
 text-align:center;
 }
 .home_subheading{
 margin-top:16px;
 	font-family:'InterMedium';
 	font-size:22px;
-		width:72%;
-	padding:0% 14%;
+		width:88%;
+	padding:0% 6%;
 	color:$text_black_light;
 text-align:center;
 }
@@ -334,10 +452,9 @@ text-align:center;
 
 
 .feature_graphic{
-	float:right;
-	width:50%;
+float:left;
+	width:40%;
 	height:320px;
-	display:table;
 	position:relative;
 	margin-left:6%;
 }
@@ -373,7 +490,7 @@ vertical-align: middle;
 }
 
 .section_seperator{
-	margin:48px 0px;
+	margin-top:48px;
 
 }
 .seperator{
@@ -399,7 +516,7 @@ width:100%;
 }
 
 .be_among_the_first_container .signup_container{
-	margin-top:56px;
+	margin-top:0px;
 }
 
 .footer_list{
@@ -483,7 +600,7 @@ display:inline-block;
 }
 
 .wallets_list:nth-child(2n){
-	margin-left:4%;
+	margin-left:6%;
 }
 
 .wallets_list_title{
@@ -496,17 +613,20 @@ text-align:center;
 
 
 .wallets_list_body{
-	margin-top:16px;
+	margin-top:24px;
 	font-family:'InterRegular';
 	font-size:20px;
 	line-height:36px;
 	color:$text_white;	
+	height:144px;
 width:100%;
 text-align:center;
 
 }
 
-
+.wallets_list:nth-child(3), .wallets_list:nth-child(4){
+	margin-top:64px;
+}
 
 
 
@@ -522,7 +642,7 @@ left:0px;
 height:100%;
 width:100%;
 z-index:2;
-	background:rgba(0,0,0,0.44);
+	background:rgba(0,0,0,0.52);
 }
 .overlay_text_container{
 	position:relative;
@@ -559,6 +679,8 @@ display:inline-block;
 }
 .about_title_container{
 	color:$text_white;
+	font-family:'InterMedium';
+	font-size:$title_large;
 	text-align:center;
 	width:72%;
 	padding:0 14%;
@@ -662,7 +784,7 @@ overflow:hidden;
 }
 
 .list_number_text{
-	font-family:'InterSemiBold';
+	font-family:'InterMedium';
 font-size:24px;
 color:$text_black;
 padding:12px 10px;
@@ -674,7 +796,7 @@ display:inline-block;
 }
 
 .mission_list_text_heading{
-font-family:'InterSemiBold';
+font-family:'InterMedium';
 font-size:24px;
 color:$text_black;	
 text-align:left;
@@ -739,6 +861,7 @@ width:100%;
 
 .privacy_policy_container .desc_container{
 	line-height:36px;
+	font-size:20px;
 	width:72%;
 	padding-top:16px;
 }
@@ -778,8 +901,8 @@ width:100%;
 margin-top:32px;
 text-align:center;
 min-height:120px;
-width:100%;
-padding:0;	
+width:84%;
+padding:0 8%;	
 margin-top:48px;
 }
 
@@ -843,7 +966,8 @@ width:96px;
 .for_brands_container .title_container{
 	width:100%;
 	font-size:$title;
-	line-height:56px;
+	font-family:'InterMedium';
+	line-height:60px;
 }
 
 
@@ -996,7 +1120,7 @@ margin-top:32px;
 
 
 .for_brands_litewallet_offers_title{
-	font-family:'InterSemiBold';
+	font-family:'InterMedium';
 	font-size:34px;
 	width:100%;
 	text-align:center;
@@ -1006,5 +1130,85 @@ margin-top:32px;
 
 
 
+// Styles for Top Containers
 
+
+.white_background .top_container .top_right_container{
+	background:#fff;
+}
+
+.white_background .top_navigation .currently_serving, .full_bleed_background .top_navigation .currently_serving{
+	display:none;
+}
+
+.white_background .top_container .logo_container, .full_bleed_background .top_container .logo_container{
+	float:none;
+}
+
+
+.white_background .top_text_container{
+padding-right:0%;
+width:100%;	
+}
+
+
+.full_bleed_background .top_nav_scrim{
+	
+background:none;
+}
+.full_bleed_background .top_text_container{
+margin-top:0%;
+	padding-top:14%;
+}
+
+
+.top_navigation{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	min-height:120px;
+	z-index:30;
+}
+
+.top_navigation_left{
+
+float:left;
+width:47%;
+padding-left:$margin_left;
+	
+}
+
+.top_navigation_right{
+	
+float:right;
+width:47%;
+}
+
+.top_nav_scrim{
+	padding-top:6%;
+}
+
+.white_background .top_left_container{
+	padding-top:13%;
+}
+
+
+.for_brands_container .top_right_container{
+	z-index:-10;
+}
+
+
+.for_brands_container .top_right_container img{	
+position:relative;
+	height:459px;
+	width:470px;
+	margin-top:18%;
+	margin-left:12%;
+	z-index:10;
+}
+
+.privacy_policy_container .top_text_container{
+margin-top:6.5%;	
+}
 
