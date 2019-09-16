@@ -30,7 +30,7 @@ $text_white_light: rgba(255,255,255,.7);
 $text_white_disabled: rgba(255,255,255,.32);
 
 
-$litewallet_color: #000B99;
+$litewallet_color: #3600B3;
 
 
 $title_large: 43.25px;
@@ -114,6 +114,11 @@ a{
 	font-size:21.33px;
 
 }
+
+.flat_button span{
+	margin-left:4px;
+}
+
 
 .input_field{
 	
@@ -377,7 +382,7 @@ border:2px solid #fff;
 
 
 .section{
-padding:56px 0px;	
+padding:56px 0px 104px 0px;	
 }
 
 .features_container{
@@ -478,7 +483,7 @@ vertical-align: middle;
 
 
 .feature_container{
-	margin-top:32px;
+	margin-top:80px;
 }
 .feature_container:nth-child(1){
 	margin-top:64px;
@@ -496,8 +501,8 @@ vertical-align: middle;
 .seperator{
 	background:#ddd;
 	height:1px;
-	width:72%;
-	margin:0 14%;
+	width:88%;
+	margin:0 6%;
 }
 
 .one_wallet_container{
@@ -559,26 +564,47 @@ width:100%;
 
 
 .wallets_container{
-	margin:80px 0px 16px 0px;
+//	margin:80px 0px 16px 0px;
+margin-top:72px;
 	width:100%;
 	text-align:center;
 }
 
 .wallet_container{
-margin-left:40px;	
 display:inline-block;
+
 }
 
-.wallet_container:nth-child(1){
-	margin-left:0px;
+
+.wallet_container_single{
+	width:100%;
+	margin-top:32px;
 }
+
+.wallet_container_single:nth-child(1){
+	margin-top:0px;
+}
+
+.wallet_container_single:nth-child(1), .wallet_container_single:nth-child(3){
+	opacity:.15;
+}
+
+
 
 .wallet_container img{
-	width:270px;
-	height:155px;
+height:157px;
+width:274px;
+margin-left:40px;
 
-	box-shadow:3px 3px 6px 4px rgba(0,0,0,.12);
+
+box-shadow:	3px 3px 6px 4px rgba(0,0,0,.12);
+-webkit-box-shadow:	3px 3px 6px 4px rgba(0,0,0,.12);
 }
+
+.wallet_container:nth-child(1) img{
+	margin-left:24px;
+}
+
 
 
 .wallets_body_container{
@@ -1212,3 +1238,133 @@ position:relative;
 margin-top:6.5%;	
 }
 
+
+
+
+
+
+
+
+
+.feature_container:nth-child(2) .feature_graphic{
+	
+margin-left:-4%;
+}
+
+
+
+
+
+
+// Store Tools Features Container
+
+
+.store_tools_features_container{
+	margin-top:48px;
+}
+
+.store_tools_features_text{
+	font-family:'InterRegular';
+	font-size:24px;
+	line-height:44px;
+	width:100%;
+padding:0%;
+text-align:center;
+}
+
+.store_tools_features_container{
+	width:100%;
+	text-align:center;
+}
+
+.store_tools_features_single{
+	padding:16px;
+	display:inline-block; 
+	border:1px solid #ddd;
+	border-radius:6px;
+	width:240px;
+	height:72px;
+}
+.store_tools_features_single_text{
+	font-family:'InterRegular';
+	font-size:20px;
+	line-height:36px;
+}
+
+.store_tools_features_mockups{
+	margin-top:0px;
+	width:100%;
+	text-align:center; 
+}
+
+
+.store_tools_mockups_single{
+display:inline-block;
+margin-left:-7%;	
+
+}
+
+.store_tools_mockups_single:nth-child(1){
+	margin-left:-4%;
+	vertical-align:272px;
+}
+
+.store_tools_mockups_single:nth-child(2){
+
+vertical-align:120px;
+}
+
+.store_tools_mockups_single:nth-child(3){
+
+vertical-align:188px;
+}
+
+
+.store_tools_mockups_single:nth-child(4){
+
+vertical-align:288px;
+}
+
+
+
+.store_tools_mockups_single img{
+	height:554px;
+	width:373px; 
+}
+
+.home_para{
+	margin-top:40px;
+	width:100%;
+	text-align:center;
+}
+
+.home_para:nth-child(1){
+	margin-top:0px;
+}
+
+.grow_your_brand_container{ 
+	padding-bottom:0px;
+	background:#f9f9f9;
+}
+
+.home_para_line{
+	width:80%;
+	padding:0 10%;
+	font-family:'InterMedium';
+	font-size:24px;
+	line-height:40px;
+	margin-top:8px;
+}
+.home_para_line:nth-child(1){
+	margin-top:0px;
+}
+
+
+.know_more_about_tools{
+	margin-top:24px;
+	width:100%;
+	text-align:center;
+}
+.know_more_about_tools a{
+	
+}
