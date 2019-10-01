@@ -424,14 +424,14 @@ text-align:center;
 
 .feature_container{
 	
-	height:320px;
-	width:88%;
-	padding:0px 6%;
+	height:420px;
+	width:94%;
+	padding:0px 3%;
 }
 
 .feature_text{
 	float:left;
-	width:44%;
+	width:40%;
 	position:relative;
 	height:320px;
 	display:table;
@@ -457,11 +457,11 @@ text-align:center;
 
 
 .feature_graphic{
-float:left;
-	width:40%;
+float:right;
+	width:50%;
 	height:320px;
 	position:relative;
-	margin-left:6%;
+	margin-left:4%;
 }
 
 .feature_graphic_inner{
@@ -470,6 +470,29 @@ display:table-cell;
 vertical-align: middle;
 }
 
+
+.feature_graphic_inner img.screenshot{
+position:relative;
+	width:247px;
+	height:434px;
+	margin-left:-34%;
+	box-shadow:0px 0px 3px 3px rgba(0,0,0,.12);
+	-webkit-box-shadow:0px 0px 3px 3px rgba(0,0,0,.12);
+}
+
+.feature_graphic_inner img:nth-child(1){
+	margin-left:0px;
+	z-index:10;
+}
+
+
+.feature_graphic_inner img:nth-child(2){
+	z-index:8;
+}
+
+.feature_graphic_inner img:nth-child(3){
+	z-index:6;
+}
 
 
 .feature_container:nth-child(2n) .feature_graphic{
@@ -559,7 +582,7 @@ width:100%;
 
 
 .one_wallet_container{
-	padding-bottom:80px;
+	padding-bottom:136px;
 }
 
 
@@ -616,12 +639,13 @@ box-shadow:	3px 3px 6px 4px rgba(0,0,0,.12);
 	width:80%;
 	min-height:120px;
 	margin-left:10%;
+	padding-top:32px;
 }
 
 .wallets_list{
 	width:46%;
 	float:left;
-	margin-top:64px;
+	margin-top:88px;
 
 }
 
@@ -653,6 +677,28 @@ text-align:center;
 .wallets_list:nth-child(3), .wallets_list:nth-child(4){
 	margin-top:64px;
 }
+
+
+
+.wallets_list_icon{
+	width:100%;
+	text-align:center;
+	height:104px;
+}
+
+.wallets_list_icon_circle{
+height:80px;
+width:80px;
+display:inline-block;
+
+border-radius:50%;
+}
+.wallets_list_icon_circle img{
+	height:72px;
+	width:72px;
+
+}
+
 
 
 
@@ -1283,7 +1329,7 @@ text-align:center;
 	border:1px solid #ddd;
 	border-radius:6px;
 	width:240px;
-	height:72px;
+	height:136px;
 }
 .store_tools_features_single_text{
 	font-family:'InterRegular';
@@ -1295,6 +1341,16 @@ text-align:center;
 	margin-top:0px;
 	width:100%;
 	text-align:center; 
+}
+
+.store_tools_features_icon{
+	width:100%;
+	text-align:center;
+}
+
+.store_tools_features_icon img{
+	height:64px;
+	width:64px;
 }
 
 
@@ -1368,3 +1424,49 @@ vertical-align:288px;
 .know_more_about_tools a{
 	
 }
+
+
+
+
+// 
+
+
+.customers_section_container{
+width:100%;
+}
+.customers_content_container{
+width:88%;
+padding:0 6%;	
+margin-top:6%;
+min-height:120px;
+}
+
+.customers_single_container{
+position:relative;
+float:leaddressft;
+	width:48%;
+	min-height:480px;
+	background-image:url('../images/For Customers.jpg');
+	background-size:cover;
+}
+.customers_single_container:nth-child(2){
+	margin-left:4%;
+		background-image:url('../images/For Brands.jpg');
+}
+
+.customer_single_title{
+	
+}
+
+.image_overlay_container{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background:rgba(0,0,0,.4);
+}
+
+
+
+
