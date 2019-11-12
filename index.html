@@ -123,13 +123,21 @@ Signup for an early beta
 
 </div>
 
-<div class="signup_input_container">
+<div class="signup_input_container" id="signup_input_container">
 
 
 <div class="signup_inner_container">
-<input type="text" class="signup_input input_field" name="signup_input" placeholder="Enter your email address" />
+	<form name="litewallet_signup" action="javascript:validate_email();">
+<input type="text" class="signup_input input_field" name="signup_input" id="signup_input" placeholder="Enter your email address" />
 <button class="signup_button raised_button">Signup for Litewallet</button>
+</form>
 </div>
+
+</div>
+
+<div id="signup_message">
+	
+
 
 </div>
 
@@ -725,12 +733,25 @@ Signup for an early beta
 
 </div>
 
-<div class="signup_input_container">
+<div class="signup_input_container" id="signup_input_container">
 
 <div class="signup_inner_container">
-<input type="text" class="signup_input" name="signup_input" placeholder="Enter your email address" />
+
+	<form name="litewallet_signup" action="javascript:validate_email();">
+
+<input type="text" class="signup_input" name="signup_input" id="signup_input" placeholder="Enter your email address" />
 <button class="signup_button raised_button">Signup for Litewallet</button>
+
+</form>
+
 </div>
+
+<div id="signup_message">
+	
+
+
+</div>
+
 
 </div>
 
@@ -780,6 +801,49 @@ Signup for an early beta
 
 
 </div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+
+
+function validate_email() 
+{
+
+
+var signup_input = document.getElementById('signup_input');
+var signup_message = document.getElementById('signup_message');
+var signup_input_container = document.getElementById('signup_input_container');
+
+
+ var test_1 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(signup_input.value);
+
+ if (test_1 == true) {
+     signup_message.innerHTML = "";
+
+          $('.signup_label').css('display','none');
+          $('.signup_avatars_text').css('display','none');
+
+     signup_input_container.innerHTML = "<div class='signup_success_title'>Signed up for the betalist!</div> <div class='signup_success_message'>You have successfully signed up for Litewallet beta. We'll let you know when we have Litewallet Beta to share with you :)</div>";
+  }
+
+ else if(test_1 == false){
+    $("#signup_message").addClass("invalid");
+    signup_message.innerHTML = "Please enter a valid Email Address.";
+
+}
+
+}
+
+</script>
+
+
+
+
+
+
 
 
 </body>
