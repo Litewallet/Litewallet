@@ -40,7 +40,7 @@ $caption: 18.96px;
 $smaller_caption: 16.86px;
 
 
-$margin_left:6%;
+$margin_left:4%;
 
 
 *{
@@ -253,11 +253,11 @@ padding-right:4%;
 padding-top:5.5%;
 }
 .text_title_container{
-	width:100%;
+	width:92%;
 	padding:0%;
 	text-align:left;
 	font-family:'InterMedium';
-	font-size:34.17px;
+	font-size:31.4px;
 	line-height:56px;
 
 }
@@ -449,8 +449,8 @@ padding:56px 0px 104px 0px;
 text-align:center;
 }
 .home_subheading{
-margin-top:16px;
-	font-family:'InterMedium';
+margin-top:8px;
+	font-family:'InterRegular';
 	font-size:22px;
 		width:88%;
 	padding:0% 6%;
@@ -1374,7 +1374,7 @@ text-align:center;
 	border:1px solid #ddd;
 	border-radius:6px;
 	width:240px;
-	height:136px;
+	height:152px;
 }
 .store_tools_features_single_text{
 	font-family:'InterRegular';
@@ -1384,7 +1384,7 @@ text-align:center;
 
 .store_tools_features_mockups{
 	margin-top:0px;
-	width:100%;
+    width:100%;
 	text-align:center; 
 }
 

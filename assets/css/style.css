@@ -84,7 +84,7 @@ a {
   min-height: 240px;
   height: 100%;
   width: 94%;
-  padding-left: 6%; }
+  padding-left: 4%; }
 
 .top_nav_container {
   position: relative;
@@ -156,11 +156,11 @@ img.logo {
   padding-top: 5.5%; }
 
 .text_title_container {
-  width: 100%;
+  width: 92%;
   padding: 0%;
   text-align: left;
   font-family: 'InterMedium';
-  font-size: 34.17px;
+  font-size: 31.4px;
   line-height: 56px; }
 
 .text_desc_container {
@@ -310,8 +310,8 @@ button.raised_button {
   text-align: center; }
 
 .home_subheading {
-  margin-top: 16px;
-  font-family: 'InterMedium';
+  margin-top: 8px;
+  font-family: 'InterRegular';
   font-size: 22px;
   width: 88%;
   padding: 0% 6%;
@@ -905,7 +905,7 @@ button.raised_button {
 .top_navigation_left {
   float: left;
   width: 46.5%;
-  padding-left: 6%; }
+  padding-left: 4%; }
 
 .top_navigation_right {
   float: right;
@@ -955,7 +955,7 @@ button.raised_button {
   border: 1px solid #ddd;
   border-radius: 6px;
   width: 240px;
-  height: 136px; }
+  height: 152px; }
 
 .store_tools_features_single_text {
   font-family: 'InterRegular';
