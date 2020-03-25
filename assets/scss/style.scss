@@ -22,8 +22,8 @@
 }
 
 $text_black: rgba(0,0,0,.87);
-$text_black_light: rgba(0,0,0,.50);
-$text_black_disabled: rgba(0,0,0,.24);
+$text_black_light: rgba(0,0,0,.60);
+$text_black_disabled: rgba(0,0,0,.38);
 
 $text_white: rgba(255,255,255,1);
 $text_white_light: rgba(255,255,255,.7);
@@ -176,12 +176,12 @@ height:100%;
 .logo_container{
 width:100%;
 min-height:64px;
-	padding-top:4%;
+	padding-top:2.4%;
 }
 
 img.logo{
-	height:45px;
-	width:165px;
+	height:60px;
+	width:216px;
 }
 
 
@@ -414,14 +414,14 @@ border:2px solid #fff;
 
 .logo_left{
 	float:left;
-	width:34%;
+	width:38%;
 }
 
 .currently_serving{
 	float:right;
 	padding-right:3%;
-	width:50%;
-	padding-top:16px;
+	width:46%;
+	padding-top:24px;
 	color:$text_black_light;
 }
 
@@ -614,8 +614,13 @@ width:100%;
 }
 
 .footer_logo{
-	margin:72px 0px 40px 0px;
+	margin:88px 0px 24px 0px;
 	text-align:center;
+}
+
+.footer_logo img.logo{
+	height:50px;
+	width:180px;
 }
 
 .footer_terms{

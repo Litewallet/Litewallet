@@ -103,11 +103,11 @@ a {
 .logo_container {
   width: 100%;
   min-height: 64px;
-  padding-top: 4%; }
+  padding-top: 2.4%; }
 
 img.logo {
-  height: 45px;
-  width: 165px; }
+  height: 60px;
+  width: 216px; }
 
 .text_slider {
   display: inline-block; }
@@ -283,14 +283,14 @@ button.raised_button {
 
 .logo_left {
   float: left;
-  width: 34%; }
+  width: 38%; }
 
 .currently_serving {
   float: right;
   padding-right: 3%;
-  width: 50%;
-  padding-top: 16px;
-  color: rgba(0, 0, 0, 0.5); }
+  width: 46%;
+  padding-top: 24px;
+  color: rgba(0, 0, 0, 0.6); }
 
 .section {
   padding: 56px 0px 104px 0px; }
@@ -315,7 +315,7 @@ button.raised_button {
   font-size: 22px;
   width: 88%;
   padding: 0% 6%;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.6);
   text-align: center; }
 
 .features_content_container {
@@ -345,7 +345,7 @@ button.raised_button {
   font-family: 'InterRegular';
   margin-top: 16px;
   text-align: left;
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.6); }
 
 .feature_graphic {
   float: right;
@@ -432,8 +432,12 @@ button.raised_button {
   color: white; }
 
 .footer_logo {
-  margin: 72px 0px 40px 0px;
+  margin: 88px 0px 24px 0px;
   text-align: center; }
+
+.footer_logo img.logo {
+  height: 50px;
+  width: 180px; }
 
 .footer_terms {
   color: rgba(255, 255, 255, 0.7);
