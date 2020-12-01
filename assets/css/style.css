@@ -126,7 +126,7 @@ a {
 .logo_container {
   width: 100%;
   min-height: 64px;
-  padding-top: 3%; }
+  padding-top: 2.6%; }
 
 img.logo {
   height: 40px;
@@ -269,7 +269,7 @@ button.raised_button {
   background: linear-gradient(to bottom right, #7A23E1, #440FBF);
   color: white;
   padding: 16px 20px;
-  font-size: 16.5px; }
+  font-size: 15.7px; }
 
 .signup_avatars_container {
   padding-top: 24px;
@@ -312,7 +312,7 @@ button.raised_button {
   float: right;
   padding-right: 3%;
   width: 46%;
-  padding-top: 8px;
+  padding-top: 12px;
   color: rgba(0, 0, 0, 0.6); }
 
 .section {
@@ -600,8 +600,8 @@ button.raised_button {
   padding: 0 14%;
   margin-top: 1.5%;
   font-family: 'InterRegular';
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 23px;
+  line-height: 36px;
   margin-top: 24px; }
 
 .about_section {
