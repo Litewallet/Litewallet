@@ -169,9 +169,22 @@ position:relative;
 	height:100%;
 	width:100%;
 
+}
+
+.right_background_container{
+	position:absolute;
+	top:0%;
+	right:0%;
+	height:100%;
+	width:47.5%;
+
 	background-image:url('../images/litewallet_background_pattern.jpg');
     background-size:cover;
+    z-index:20;
 }
+
+
+
 
 .top_inner_container{
 min-height:240px;
@@ -185,6 +198,8 @@ height:100%;
 	position:relative;
 	width:100%;
 	min-height:120px;
+
+	z-index:50;
 }
 
 .top_nav_scrim{
@@ -196,6 +211,7 @@ height:100%;
 	background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,0));
 
 	padding-top:1.2%;
+	z-index:60;
 }
 
 .logo_container{
