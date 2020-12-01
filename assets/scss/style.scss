@@ -1,5 +1,18 @@
 
+@font-face{
+	src:url('../fonts/Graphik-Regular.woff2');
+	font-family:'Graphik';
+}
 
+@font-face{
+	src:url('../fonts/Graphik-Medium.ttf');
+	font-family:'GraphikMedium';
+}
+
+@font-face{
+	src:url('../fonts/gordita-bold-webfont.woff2');
+	font-family:'GorditaBold';
+}
 
 @font-face{
 	src:url('../fonts/Inter-Regular.ttf');
@@ -21,13 +34,19 @@
 	font-family:'InterBold';
 }
 
-$text_black: rgba(0,0,0,.87);
-$text_black_light: rgba(0,0,0,.60);
-$text_black_disabled: rgba(0,0,0,.38);
+$text_dark: rgba(0,0,0,.87);
+$text_dark_light: rgba(0,0,0,.60);
+$text_dark_disabled: rgba(0,0,0,.38);
 
 $text_white: rgba(255,255,255,1);
 $text_white_light: rgba(255,255,255,.7);
 $text_white_disabled: rgba(255,255,255,.32);
+
+
+
+$type_regular: 'Graphik';
+$type_medium: 'GraphikMedium';
+
 
 
 $litewallet_color: #3600B3;
@@ -40,7 +59,10 @@ $caption: 18.96px;
 $smaller_caption: 16.86px;
 
 
-$margin_left:4%;
+$litewallet_gradient: linear-gradient(to bottom right, #7A23E1, #440FBF);
+
+
+$margin_left:5.4%;
 
 
 *{
@@ -52,13 +74,16 @@ html{
 	overflow-x:hidden;
 }
 
-
+.container.smaller_version{
+	height:100%;
+	overflow:hidden;
+}
 
 
 html,body{
 	height:100%;
 	width:100%;
-	font-family:'InterRegular';
+	font-family:$type_regular;
 
 
 	-webkit-font-smoothing: antialiased;
@@ -84,17 +109,17 @@ html,body{
 
 a{
 	text-decoration:none;
-	color:$text_black;
+	color:$text_dark;
 }
 
 
 .title{
-	font-family:'InterMedium';
+	font-family:$type_medium;
 	font-size:34px;
 	line-height:56px;
 }
 .subtitle{
-	font-family:'InterRegular';
+	font-family:$type_regular;
 
 }
 
@@ -110,7 +135,7 @@ a{
 
 .flat_button{
 	color:$litewallet_color;
-	font-family:'InterMedium';
+	font-family:$type_medium;
 	font-size:21.33px;
 
 }
@@ -176,12 +201,12 @@ height:100%;
 .logo_container{
 width:100%;
 min-height:64px;
-	padding-top:2.4%;
+	padding-top:3%;
 }
 
 img.logo{
-	height:60px;
-	width:216px;
+	height:40px;
+	width:152px;
 }
 
 
@@ -204,14 +229,14 @@ float:right;
 	list-style-type:none;
 	float:left;
 	color:$text_white;
-	font-family:'InterMedium';
-	padding-left:5%;
+	font-family:$type_medium;
+	padding-left:7%;
 	font-size:16px;
 }
 .nav_container ul li a{
 	text-decoration:none;
 		color:$text_white;
-	font-family:'InterMedium';
+	font-family:$type_medium;
 
 	font-size: $smaller_caption;
 }
@@ -254,32 +279,32 @@ padding-top:5.5%;
 }
 .text_title_container{
 	width:92%;
+	color:$text_dark;
 	padding:0%;
 	text-align:left;
-	font-family:'InterMedium';
-	font-size:31.4px;
-	line-height:56px;
+	font-family:$type_medium;
+	font-size:33.5px;
+	line-height:54px;
 
 }
 
 .text_desc_container{
 	
-	margin-top:1.5%;
-	font-family:'InterRegular';
+	font-family:$type_regular;
 	font-size:20px;
 	line-height:40px;
 		width:92%;
-		padding-top:2%;
+		padding-top:1.8%;
 	padding-right:4%;
 	text-align:left;
 }
 .signup_container{
-	margin-top:4.5%;
+	margin-top:6.5%;
 	width:96%;
 	padding-right:4%;
 }
 .signup_label{
-font-family:'InterMedium';
+font-family:$type_medium;
 font-size:18.96px;
 text-align:center;
 width:100%;
@@ -300,7 +325,7 @@ input[type="text"]{
 	border:none;
 	border-radius:4px;
 	padding:16px;
-	font-family:'InterRegular';
+	font-family:$type_regular;
 	font-size:18px;
 }
 .signup_input{
@@ -315,7 +340,7 @@ input[type="text"]{
 
 #signup_message{
 	
-	font-family:'InterRegular';
+	font-family:$type_regular;
 	font-size:18px;
 	padding-top:16px;
 	line-height:28px;
@@ -335,14 +360,14 @@ input[type="text"]{
 
 
 .signup_success_title{
-	font-family:'InterMedium';
+	font-family:$type_medium;
 	font-size:$subtitle;
 	line-height:32px;
 	color:green;
 }
 
 .signup_success_message{
-	font-family:'InterRegular';
+	font-family:$type_regular;
 	font-size:20px;
 	line-height:36px;
 	padding-top:16px;
@@ -356,6 +381,7 @@ button{
 	border:none;
 	border-radius:4px;
 	cursor:pointer;
+	font-family:$type_medium;
 }
 
 button.signup_button{
@@ -364,11 +390,10 @@ button.signup_button{
 }
 
 button.raised_button{
-	background:$litewallet_color;
+	background:$litewallet_gradient;
 	color:$text_white;
-	padding:16px;
-	font-family:'InterRegular';
-	font-size:18px;
+	padding:16px 20px;
+	font-size:16.5px;
 }
 
 
@@ -392,11 +417,11 @@ border:2px solid #fff;
 
 .signup_avatars_text{
 	padding-top:24px;
-	font-family:'InterRegular';
+	font-family:$type_regular;
 	font-size:$smaller_caption;
 	text-align:center;
 	width:100%;
-	color:$text_black;
+	color:$text_dark;
 }
 
 .top_signup_container .signup_label, .top_signup_container .signup_input_container, .top_signup_container .signup_inner_container, .top_signup_container .signup_avatars_text{
@@ -421,8 +446,8 @@ border:2px solid #fff;
 	float:right;
 	padding-right:3%;
 	width:46%;
-	padding-top:24px;
-	color:$text_black_light;
+	padding-top:8px;
+	color:$text_dark_light;
 }
 
 
@@ -440,21 +465,21 @@ padding:56px 0px 104px 0px;
 	
 }
 .home_heading{
-	font-family:'InterMedium';
+	font-family:$type_medium;
 	font-size:34px;
 	line-height:56px;
 	width:88%;
 	padding:0% 6%;
-	color:$text_black;
+	color:$text_dark;
 text-align:center;
 }
 .home_subheading{
 margin-top:8px;
-	font-family:'InterRegular';
+	font-family:$type_regular;
 	font-size:22px;
 		width:88%;
 	padding:0% 6%;
-	color:$text_black_light;
+	color:$text_dark_light;
 text-align:center;
 }
 
@@ -497,7 +522,7 @@ text-align:center;
 	font-family:'InterRegular';
 	margin-top:16px;
 	text-align:left;
-	color:$text_black_light;
+	color:$text_dark_light;
 }
 
 
@@ -829,7 +854,7 @@ display:inline-block;
 }
 
 .about_section_heading{
-	color:$text_black;
+	color:$text_dark;
 }
 
 .about_section_subheading{
@@ -858,7 +883,7 @@ display:inline-block;
 	font-family:'InterRegular';
 	font-size:21.33px;
 	line-height:36px;
-	color:$text_black;
+	color:$text_dark;
 	width:100%;
 	padding:0px;
 	margin-top:32px;
@@ -908,7 +933,7 @@ overflow:hidden;
 .list_number_text{
 	font-family:'InterMedium';
 font-size:24px;
-color:$text_black;
+color:$text_dark;
 padding:12px 10px;
 }
 
@@ -920,7 +945,7 @@ display:inline-block;
 .mission_list_text_heading{
 font-family:'InterMedium';
 font-size:24px;
-color:$text_black;	
+color:$text_dark;	
 text-align:left;
 
 }
@@ -932,7 +957,7 @@ line-height:36px;
 margin-top:16px;	
 text-align:left;
 
-color:$text_black;
+color:$text_dark;
 }
 
 .our_values_container{
@@ -956,7 +981,7 @@ color:$text_black;
 }
 
 .white_background .top_nav_container .nav_container ul li a, .white_background .title_container, .white_background .desc_container{
-	color:$text_black;
+	color:$text_dark;
 }
 
 .privacy_policy_container .title_container{
@@ -1308,7 +1333,7 @@ width:47.5%;
 }
 
 .top_nav_scrim{
-	padding-top:6%;
+	padding-top:5%;
 }
 
 .white_background .top_left_container{
