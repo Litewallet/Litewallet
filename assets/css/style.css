@@ -8,6 +8,15 @@
   src: url("../fonts/gordita-bold-webfont.woff2");
   font-family: 'GorditaBold'; }
 @font-face {
+  src: url("../fonts/Sailec.ttf");
+  font-family: 'Sailec'; }
+@font-face {
+  src: url("../fonts/Sailec-Medium.ttf");
+  font-family: 'SailecMedium'; }
+@font-face {
+  src: url("../fonts/gordita-bold-webfont.woff2");
+  font-family: 'GorditaBold'; }
+@font-face {
   src: url("../fonts/Inter-Regular.ttf");
   font-family: 'InterRegular'; }
 @font-face {
